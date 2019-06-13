@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- For Glyphicon Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js"
+        integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+    <title>Questionnaire</title>
+    <style>
+        a {
+            color: brown;
+            font-weight: bold;
+        }
+
+        span {
+            color: red;
+            font-size: 2rem;
+        }
+
+        .inner-div {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <hr>
+        <h3>Who you are!!</h3>
+        <form>
+            <div class="form-group">
+                <label for="name"><span>*</span> Name </label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="social_link"><span>*</span> Link to any of your social media account </label>
+                <input type="text" class="form-control" id="social_link">
+            </div>
+            <hr>
+
+            <div class="inner-div p-5 border border-secondary">
+                <h2>Questionnaire</h2>
+                <br>
+                <div class="form-group">
+                    <label for="question_1">Are you a person to spend more time with people than gadgets?
+                    </label>
+                    <select class="form-control" id="question_1">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question_2">You like to play safe than being audacious?
+                    </label>
+                    <select class="form-control" id="question_2">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question_3">Are you a perfectionist?
+                    </label>
+                    <select class="form-control" id="question_3">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question_4">How much you prefer books than movies?
+                    </label>
+                    <select class="form-control" id="question_4">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question_3">How much you like travelling?
+                    </label>
+                    <select class="form-control" id="question_3">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly agree)</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <input id="submit" type="submit" class="btn btn-lg btn-primary btn-block">
+            <br>
+        </form>
+        <div class="text-center">
+            <a href="/api/friendlist">API Friend List | </a>
+            <a href="/api/repo">GitHub Repo</a>
+        </div>
+        <br>
+    </div>
+</body>
+
+</html>
