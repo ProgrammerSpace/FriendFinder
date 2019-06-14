@@ -24,16 +24,23 @@
 
 <body>
     <div class="container">
-        <h1>Survey Questions</h1>
+        <h1>Survey Questions
+            <div class="float-right">
+                <a href="/" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-home"></span> Home
+                </a>
+            </div>
+        </h1>
         <hr>
         <h3>Who you are!!</h3>
         <form>
             <div class="form-group">
-                <label for="name"><span>*</span> Name </label>
+                <label for="name"><span class="require">*</span> Name </label>
                 <input type="text" class="form-control" id="name">
             </div>
             <div class="form-group">
-                <label for="social_link"><span>*</span> Link to any of your social media account </label>
+                <label for="social_link"><span class="require">*</span> Link to any of your social media account
+                </label>
                 <input type="text" class="form-control" id="social_link">
             </div>
             <hr>
