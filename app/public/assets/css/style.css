@@ -1,0 +1,14 @@
+a {
+    color: brown;
+    font-weight: bold;
+}
+
+span {
+    color: red;
+    font-size: 2rem;
+}
+
+.inner-div {
+    margin-left: 100px;
+    margin-right: 100px;
+}
