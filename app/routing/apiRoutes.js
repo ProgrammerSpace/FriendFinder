@@ -4,11 +4,11 @@ var list = require("../data/friends.js");
 var router1 = express.Router();
 
 router1.get("/api/friendlist", function (req, res) {
-    res.json("Friend List");
+    res.json(list);
 });
 
 router1.get("/api/repo", function (req, res) {
-    res.json("Repo");
+    res.redirect("https://github.com/ProgrammerSpace/FriendFinder");
 });
 
 router1.post("/api/findmatch", function (req, res) {
