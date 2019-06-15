@@ -3,7 +3,7 @@ $("#submit").on("click", function (event) {
 
     // Extract data
     var name = $("#name").val().trim();
-    var social_link = $("#social_link").val().trim();
+    var photo_link = $("#photo_link").val().trim();
 
     var survey = [];
 
@@ -12,18 +12,18 @@ $("#submit").on("click", function (event) {
     }
 
     // Validate required fields
-    if (name == "" || social_link == "") {
-        alert("Please fill in required fields!")
+    if (name == "" || photo_link == "") {
+        $('#alert').modal('show');
     } else {
         for (i in survey) {
             if (survey[i] == "") {
                 survey[i] = 0;
             }
         }
-        console.log(name + "\n" + social_link + "\n" + survey);
+        console.log(name + "\n" + photo_link + "\n" + survey);
         var newData = {
             name: name,
-            photo: social_link,
+            photo: photo_link,
             scores: survey
         }
 
@@ -34,13 +34,30 @@ $("#submit").on("click", function (event) {
         }).then(
             function (match) {
                 // Handle response
-                console.log("Saving your data so people can find you");
-                console.log("here is your match: " + match.name + " " + match.photo);
+
+                // Reset fields to empty
                 $("#name").val("");
-                $("#social_link").val("");
+                $("#photo_link").val("");
                 for (let i = 1; i <= 5; i++) {
                     $("#question_" + i).val("")
                 }
+
+                // Dynamic elements to hold result
+                let pm_body = $("<div>");
+                let pm_name = $("<p>");
+                pm_name.text(match.name);
+                let note = $("<p>");
+                note.text("Saving your data, so people can find you.");
+                let pm_picture = $("<img>");
+                pm_picture.attr("src", match.photo);
+                pm_picture.attr("width", "200");
+                pm_picture.attr("height", "200");
+                pm_body.append(pm_name, pm_picture, note);
+                $("#details").empty;
+                $("#details").append(pm_body);
+
+                // Show result
+                $('#popup').modal('show');
             }
         );
     }
