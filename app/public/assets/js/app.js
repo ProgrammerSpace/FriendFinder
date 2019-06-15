@@ -1,6 +1,7 @@
 $("#submit").on("click", function (event) {
     event.preventDefault();
 
+    // Extract data
     var name = $("#name").val().trim();
     var social_link = $("#social_link").val().trim();
 
@@ -10,6 +11,7 @@ $("#submit").on("click", function (event) {
         survey.push($("#question_" + i).val())
     }
 
+    // Validate required fields
     if (name == "" || social_link == "") {
         alert("Please fill in required fields!")
     } else {
@@ -25,11 +27,13 @@ $("#submit").on("click", function (event) {
             scores: survey
         }
 
+        // POST request
         $.ajax("/api/findmatch", {
             type: "POST",
             data: newData
         }).then(
             function (match) {
+                // Handle response
                 console.log("Saving your data so people can find you");
                 console.log("here is your match: " + match.name + " " + match.photo);
                 $("#name").val("");
