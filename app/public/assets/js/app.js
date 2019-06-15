@@ -7,7 +7,7 @@ $("#submit").on("click", function (event) {
 
     var survey = [];
 
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 10; i++) {
         survey.push($("#question_" + i).val())
     }
 
@@ -38,7 +38,7 @@ $("#submit").on("click", function (event) {
                 // Reset fields to empty
                 $("#name").val("");
                 $("#photo_link").val("");
-                for (let i = 1; i <= 5; i++) {
+                for (let i = 1; i <= 10; i++) {
                     $("#question_" + i).val("")
                 }
 

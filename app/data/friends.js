@@ -7,6 +7,11 @@ var dataList = [
             "1",
             "4",
             "4",
+            "5",
+            "5",
+            "1",
+            "4",
+            "4",
             "5"
         ]
     },
@@ -14,6 +19,11 @@ var dataList = [
         "name": "Jacob Deming",
         "photo": "https://images02.foap.com/images/0bdd91c4-6bb9-4e69-b3b6-7b0f94bb069a/funny-monkey-face.jpg?filename=w1280&dw=960",
         "scores": [
+            "4",
+            "2",
+            "5",
+            "1",
+            "3",
             "4",
             "2",
             "5",
@@ -29,6 +39,11 @@ var dataList = [
             "2",
             "2",
             "2",
+            "4",
+            "5",
+            "2",
+            "2",
+            "2",
             "4"
         ]
     },
@@ -40,6 +55,11 @@ var dataList = [
             "3",
             "4",
             "2",
+            "2",
+            "3",
+            "3",
+            "4",
+            "2",
             "2"
         ]
     },
@@ -47,6 +67,11 @@ var dataList = [
         "name": "Lou Ritter",
         "photo": "https://images02.foap.com/images/0bdd91c4-6bb9-4e69-b3b6-7b0f94bb069a/funny-monkey-face.jpg?filename=w1280&dw=960",
         "scores": [
+            "4",
+            "3",
+            "4",
+            "1",
+            "5",
             "4",
             "3",
             "4",
