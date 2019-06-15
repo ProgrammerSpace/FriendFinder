@@ -44,15 +44,16 @@ $("#submit").on("click", function (event) {
 
                 // Dynamic elements to hold result
                 let pm_body = $("<div>");
-                let pm_name = $("<p>");
+                let pm_name = $("<h3>");
                 pm_name.text(match.name);
-                let note = $("<p>");
+                let brk = ("<br>");
+                let note = $("<i>");
                 note.text("Saving your data, so people can find you.");
                 let pm_picture = $("<img>");
                 pm_picture.attr("src", match.photo);
                 pm_picture.attr("width", "200");
                 pm_picture.attr("height", "200");
-                pm_body.append(pm_name, pm_picture, note);
+                pm_body.append(pm_name, pm_picture, brk, note);
                 $("#details").empty;
                 $("#details").append(pm_body);
 
